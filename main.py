@@ -1,23 +1,12 @@
 from fastapi import FastAPI, Query, HTTPException, status, Depends
-from pydantic import BaseModel, Field
 from jose import jwt, JWTError
 from typing import Union
 from redis_get import *
+from models import *
 import json
-
 from datetime import datetime, timedelta
 
 app = FastAPI() 
-
-# Post Method에 사용되는 BaseModel 데이터 유효성 검사
-class CalcRequest(BaseModel): # POST 메서드에 사용하는 객체 선언
-    expression: str = Field(
-        ...,
-        title="expression",
-        description="Math Expression ( Support: +, - )",
-        min_length=1, 
-        max_length=1000
-    )
 
 #########################
 # GET - 계산식 결과 호출
@@ -56,9 +45,27 @@ async def calc(
 #########################
 @app.post("/calc/")
 async def calc(request: CalcRequest):
-    request_id = send_message(request.expression, "calc_queue")
+    request_id = send_message(request)
     result = await wait_for_result(request_id)
     return {"request_id": request_id, "expression": request.expression, "result": result}
+
+#########################
+# POST - 번역 엔진 호출
+#########################
+@app.post("/trans")
+async def translate(request: TransRequest):
+    request_id = send_message(request)
+    result = await wait_for_result(request_id)
+    return {"request_id": request_id, "text": request.text, "번역 결과": result}
+    
+#########################
+# POST - 번역 엔진 호출
+#########################
+@app.post("/crypt")
+async def translate(request: CryptRequest):
+    request_id = send_message(request)
+    result = await wait_for_result(request_id)
+    return {"request_id": request_id, "text": request.text, "암호화 결과": result}
 
 #@app.post("/")
 #async def api_gateway(request : d):
@@ -68,3 +75,4 @@ async def calc(request: CalcRequest):
 #    3. "abc" -> md5 -> "asdkaopsdkasp" 
     
 #    "asdasjicxoijojdoasjdoijasodjaosdjo"
+
