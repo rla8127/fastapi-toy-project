@@ -31,29 +31,26 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 # 토큰 검증 함수
 def verify_token(token: str):
     try:
+        # decode에서 유효시간 검사도 진행
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub") 
         if username is None:
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="Invalid token",
+                detail="존재하지 않는 계정입니다.",
                 headers={"WWW-Authenticate": "Bearer"},
             )
         return username
     except JWTError:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid token",
+            detail="유효하지 않은 토큰입니다.",
             headers={"WWW-Authenticate": "Bearer"},
         )
+    except Exception as e:
+        print(f"Error: {e}")
 
 # 종속성: 토큰 검증
 def get_current_user(token: str = Depends(oauth2_scheme)):
     return verify_token(token) # 토큰을 검증하여 username을 반환함. 
 
-######################################################################
-# 보호된 엔드포인트 -- 검증 목적으로 사용하였음
-######################################################################
-# @app.get("/protected")
-# def protected_route(current_user: str = Depends(get_current_user)):
-#     return {"message": f"Hello, {current_user}! This is a protected route."}

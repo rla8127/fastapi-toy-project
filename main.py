@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query, HTTPException, status, Depends
+from fastapi import FastAPI, Query, HTTPException, status, Depends,Request
 from task import execute_task
 from redis_get import *
 from models import *
@@ -11,14 +11,13 @@ app = FastAPI()
 # API Gateway 진입점 API (태스크 관리 및 JWT 검증)
 ########################################################
 @app.post("/")
-async def api_gateway(request: ApiRequest, current_user: str = Depends(get_current_user)):
+async def api_gateway(request: Request, current_user: str = Depends(get_current_user)):
     try:
         results = await execute_task(request.task_id, request)
         return {"task_id": request.task_id, "results": results}
 
     except Exception as e:
         print(f"Error: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
     
 ######################################################################
 # 로그인 엔드포인트

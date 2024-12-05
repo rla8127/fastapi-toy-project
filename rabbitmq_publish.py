@@ -69,6 +69,8 @@ class RabbitMQSingleton:
         if self.connection:
             self.connection.close()
         
+        
+        
 ##########################################
 # RabbitMQ 인스턴스 생성
 ##########################################    
@@ -89,25 +91,6 @@ def send_message(request, queue_name: str):
                      "expression": request.expression,
                      "direction": request.direction
                  }).encode()
-            
-            # if isinstance(request, CalcRequest):
-            #     message = json.dumps({
-            #         "request_id": request_id,
-            #         "expression": request.expression
-            #     }).encode()
-                
-            # elif isinstance(request, TransRequest):
-            #     message = json.dumps({
-            #         "request_id": request_id,
-            #         "text": request.text,
-            #         "direction": request.direction
-            #     }).encode()
-                
-            # elif isinstance(request, EncryptRequest):
-            #     message = json.dumps({
-            #         "request_id": request_id,
-            #         "text": request.text,
-            #     }).encode()
                 
             # 연결이 정상적인지 확인
             if rabbitmq_instance.connection.is_open:

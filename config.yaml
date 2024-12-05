@@ -1,32 +1,32 @@
 tasks:
   1: 
-    - name: calc
+    - name: 계산
       queue: calc_queue
 
   2: 
-    - name: trans
+    - name: 번역
       queue: trans_queue
 
   3:
-    - name: encrypt
+    - name: 암호화
       queue: encrypt_queue
 
   4:
-    - name: trans
+    - name: 번역
       queue: trans_queue
-    - name: encrypt
+    - name: 암호화
       queue: encrypt_queue
 
   5:
-    - name: calc
+    - name: 계산
       queue: calc_queue
-    - name: encrypt
+    - name: 암호화
       queue: encrypt_queue
 
   6:
-    - name: calc
+    - name: 계산
       queue: calc_queue
-    - name: trans
+    - name: 번역
       queue: trans_queue
-    - name: encrypt
+    - name: 암호화
       queue: encrypt_queue  
