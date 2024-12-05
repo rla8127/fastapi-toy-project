@@ -1,0 +1,519 @@
+2024-11-28 01:46:39,470 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 01:46:39,471 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 48844), raddr=('127.0.0.1', 5672)>
+2024-11-28 01:46:39,472 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fda36870b80>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fda36870b80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 01:46:39,477 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fda36870b80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 01:46:39,478 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fda36870b80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 01:46:39,478 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fda36870b80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 01:46:39,479 INFO __init__ - Created channel=1
+2024-11-28 01:57:00,787 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 01:57:00,789 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44658), raddr=('127.0.0.1', 5672)>
+2024-11-28 01:57:00,790 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff28482bbe0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff28482bbe0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 01:57:00,795 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff28482bbe0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 01:57:00,795 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff28482bbe0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 01:57:00,795 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff28482bbe0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 01:57:00,796 INFO __init__ - Created channel=1
+2024-11-28 02:00:39,824 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 02:01:08,530 INFO calc - Result: 10
+2024-11-28 02:01:15,597 INFO calc - Result: 10
+2024-11-28 02:01:16,552 INFO calc - Result: 10
+2024-11-28 02:01:45,791 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 02:02:58,930 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44658), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:02:58,930 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44658), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:02:58,930 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44658), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:02:58,930 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:02:58,931 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:02:58,931 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44658), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:02:58,933 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:12:35,574 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 02:12:35,575 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 52384), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:12:35,576 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4a9ffa4c40>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4a9ffa4c40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 02:12:35,580 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4a9ffa4c40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:12:35,581 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4a9ffa4c40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:12:35,581 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4a9ffa4c40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:12:35,582 INFO __init__ - Created channel=1
+2024-11-28 02:14:11,603 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 02:14:11,604 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 42616), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:14:11,605 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0a835a29d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0a835a29d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 02:14:11,610 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0a835a29d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:14:11,611 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0a835a29d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:14:11,611 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0a835a29d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:14:11,612 INFO __init__ - Created channel=1
+2024-11-28 02:14:27,679 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 42616), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:14:27,679 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 42616), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:14:27,679 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 42616), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:14:27,679 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:14:27,679 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:14:27,680 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 42616), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:14:27,681 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:17:44,401 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 02:17:44,402 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 46740), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:17:44,403 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f43fffa4b20>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f43fffa4b20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 02:17:44,409 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f43fffa4b20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:17:44,409 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f43fffa4b20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:17:44,410 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f43fffa4b20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:17:44,410 INFO __init__ - Created channel=1
+2024-11-28 02:17:54,358 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 46740), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:17:54,358 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 46740), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:17:54,358 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 46740), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:17:54,359 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:17:54,359 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:17:54,359 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 46740), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:17:54,360 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:18:51,980 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 02:18:51,990 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 48972), raddr=('127.0.0.1', 5672)>
+2024-11-28 02:18:51,997 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feb544634f0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feb544634f0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 02:18:52,016 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feb544634f0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:18:52,017 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feb544634f0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:18:52,018 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feb544634f0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 02:18:52,021 INFO __init__ - Created channel=1
+2024-11-28 02:19:33,901 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 02:19:40,522 INFO calc - Result: 10
+2024-11-28 03:40:01,047 INFO calc - Result: 10
+2024-11-28 03:40:08,096 INFO calc - Result: 10
+2024-11-28 03:40:15,647 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:27,531 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:32,145 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:37,537 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:41,358 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:44,224 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:45,810 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:46,891 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:49,779 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:46:21,924 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:46:40,298 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 48972), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:46:40,298 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 48972), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:46:40,298 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 48972), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:46:40,299 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:46:40,299 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:46:40,300 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 48972), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:46:40,301 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:54:37,379 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 03:54:37,381 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47432), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:54:37,385 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f86540fbdc0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f86540fbdc0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 03:54:37,392 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f86540fbdc0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 03:54:37,393 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f86540fbdc0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 03:54:37,393 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f86540fbdc0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 03:54:37,394 INFO __init__ - Created channel=1
+2024-11-28 03:55:52,844 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47432), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:55:52,845 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47432), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:55:52,845 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47432), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:55:52,846 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:55:52,848 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:55:52,849 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47432), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:55:52,850 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:59:06,580 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 03:59:06,586 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 37042), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:59:06,590 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f87f48e4040>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f87f48e4040> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 03:59:06,603 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f87f48e4040> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 03:59:06,604 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f87f48e4040> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 03:59:06,605 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f87f48e4040> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 03:59:06,607 INFO __init__ - Created channel=1
+2024-11-28 03:59:29,369 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 37042), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:59:29,370 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 37042), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:59:29,370 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 37042), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:59:29,371 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:59:29,373 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:59:29,374 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 37042), raddr=('127.0.0.1', 5672)>
+2024-11-28 03:59:29,375 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:35:32,915 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:35:32,917 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 60554), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:35:32,919 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f187818bf40>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f187818bf40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:35:32,928 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f187818bf40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:35:32,928 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f187818bf40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:35:32,929 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f187818bf40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:35:32,930 INFO __init__ - Created channel=1
+2024-11-28 04:36:41,301 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:41,309 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:44,332 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:46,707 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:47,946 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:37:01,639 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 60554), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:37:01,640 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 60554), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:37:01,641 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 60554), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:37:01,642 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:37:01,644 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:37:01,645 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 60554), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:37:01,647 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:38:15,878 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:38:15,883 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55900), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:38:15,887 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff53b1e5f40>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff53b1e5f40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:38:15,898 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff53b1e5f40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:38:15,898 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff53b1e5f40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:38:15,899 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff53b1e5f40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:38:15,901 INFO __init__ - Created channel=1
+2024-11-28 04:38:25,077 INFO calc - Result: 8
+2024-11-28 04:38:28,545 INFO calc - Result: 8
+2024-11-28 04:39:15,341 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55900), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:39:15,341 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55900), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:39:15,342 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55900), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:39:15,343 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:39:15,344 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:39:15,344 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55900), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:39:15,347 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:47:46,637 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:47:46,640 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58840), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:47:46,644 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0370462f10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0370462f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:47:46,653 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0370462f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:47:46,654 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0370462f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:47:46,655 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0370462f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:47:46,657 INFO __init__ - Created channel=1
+2024-11-28 04:48:12,493 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58840), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:48:12,494 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58840), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:48:12,494 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58840), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:48:12,495 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:48:12,495 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:48:12,496 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58840), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:48:12,496 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:50:26,243 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:50:26,244 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38904), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:50:26,245 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f683be24a60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f683be24a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:50:26,261 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f683be24a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:26,268 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f683be24a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:26,270 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f683be24a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:26,271 INFO __init__ - Created channel=1
+2024-11-28 04:50:30,773 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:50:30,775 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58354), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:50:30,780 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fab5ca24fa0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fab5ca24fa0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:50:30,791 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fab5ca24fa0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:30,792 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fab5ca24fa0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:30,793 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fab5ca24fa0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:30,795 INFO __init__ - Created channel=1
+2024-11-28 04:50:32,926 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:50:32,928 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58364), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:50:32,940 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f840d164a60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f840d164a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:50:32,951 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f840d164a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:32,952 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f840d164a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:32,952 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f840d164a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:50:32,954 INFO __init__ - Created channel=1
+2024-11-28 04:52:13,145 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38904), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:52:13,145 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38904), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:52:13,145 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38904), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:52:13,145 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:52:13,145 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:52:13,145 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38904), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:52:13,146 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:52:45,931 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:52:45,934 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53668), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:52:45,935 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f01698189d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f01698189d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:52:45,943 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f01698189d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:52:45,944 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f01698189d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:52:45,944 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f01698189d0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:52:45,945 INFO __init__ - Created channel=1
+2024-11-28 04:53:28,967 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53668), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:53:28,967 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53668), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:53:28,967 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53668), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:53:28,967 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:53:28,968 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:53:28,968 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53668), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:53:28,969 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:59:22,455 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 04:59:22,456 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34824), raddr=('127.0.0.1', 5672)>
+2024-11-28 04:59:22,456 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e5edb1c70>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e5edb1c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 04:59:22,460 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e5edb1c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:59:22,461 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e5edb1c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:59:22,461 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e5edb1c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 04:59:22,461 INFO __init__ - Created channel=1
+2024-11-28 04:59:51,778 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:59:54,168 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 05:01:03,854 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:01:03,855 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47818), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:01:03,856 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423e23c70>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423e23c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:01:03,861 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423e23c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:01:03,862 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423e23c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:01:03,862 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423e23c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:01:03,863 INFO __init__ - Created channel=1
+2024-11-28 05:01:20,333 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47818), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:01:20,333 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47818), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:01:20,333 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47818), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:01:20,334 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:01:20,334 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:01:20,334 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47818), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:01:20,335 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:01:20,337 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:01:20,337 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 40410), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:01:20,338 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423dc1940>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423dc1940> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:01:20,341 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423dc1940> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:01:20,342 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423dc1940> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:01:20,342 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8423dc1940> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:01:20,342 INFO __init__ - Created channel=1
+2024-11-28 05:02:38,377 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:02:38,378 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38050), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:02:38,379 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dd1bcd0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dd1bcd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:02:38,382 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dd1bcd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:02:38,383 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dd1bcd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:02:38,383 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dd1bcd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:02:38,383 INFO __init__ - Created channel=1
+2024-11-28 05:02:55,274 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38050), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:02:55,274 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38050), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:02:55,274 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38050), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:02:55,275 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:02:55,275 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:02:55,275 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38050), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:02:55,276 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:02:55,278 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:02:55,280 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 43374), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:02:55,281 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dcb99a0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dcb99a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:02:55,286 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dcb99a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:02:55,286 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dcb99a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:02:55,286 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f4e9dcb99a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:02:55,287 INFO __init__ - Created channel=1
+2024-11-28 05:03:45,612 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 43374), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:03:45,612 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 43374), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:03:45,612 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 43374), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:03:45,612 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:03:45,613 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:03:45,613 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 43374), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:03:45,614 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:02,935 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:04:02,937 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 33516), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:02,938 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e751cd0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e751cd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:04:02,962 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e751cd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:04:02,962 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e751cd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:04:02,963 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e751cd0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:04:02,963 INFO __init__ - Created channel=1
+2024-11-28 05:04:13,222 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 33516), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:13,222 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 33516), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:13,222 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 33516), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:13,222 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:13,223 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:13,223 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 33516), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:13,226 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:13,232 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:04:13,235 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47484), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:13,236 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e6ef9a0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e6ef9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:04:13,244 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e6ef9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:04:13,244 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e6ef9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:04:13,244 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f566e6ef9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:04:13,245 INFO __init__ - Created channel=1
+2024-11-28 05:04:31,218 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47484), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:31,218 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47484), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:31,218 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47484), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:31,219 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:31,219 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:31,219 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47484), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:04:31,220 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:15:39,665 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:15:39,668 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38900), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:15:39,670 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85b66f10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85b66f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:15:39,677 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85b66f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:15:39,677 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85b66f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:15:39,678 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85b66f10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:15:39,679 INFO __init__ - Created channel=1
+2024-11-28 05:16:12,351 INFO calc - Result: 8
+2024-11-28 05:16:19,718 INFO calc - Result: 8
+2024-11-28 05:16:20,461 INFO calc - Result: 8
+2024-11-28 05:17:48,230 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38900), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:17:48,231 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38900), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:17:48,231 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38900), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:17:48,232 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:17:48,233 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:17:48,234 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38900), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:17:48,235 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:17:48,240 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:17:48,242 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55750), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:17:48,244 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85add490>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85add490> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:17:48,250 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85add490> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:17:48,251 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85add490> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:17:48,251 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85add490> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:17:48,251 INFO __init__ - Created channel=1
+2024-11-28 05:18:02,002 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55750), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:02,003 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55750), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:02,003 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55750), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:02,003 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:02,003 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:02,004 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55750), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:02,005 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:02,009 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:18:02,012 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53942), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:02,016 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8250>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8250> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:18:02,040 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8250> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:18:02,045 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8250> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:18:02,046 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8250> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:18:02,047 INFO __init__ - Created channel=1
+2024-11-28 05:18:16,017 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53942), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:16,018 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53942), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:16,018 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53942), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:16,019 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:16,019 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:16,020 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53942), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:16,022 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:16,035 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:18:16,036 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44016), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:18:16,038 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8880>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8880> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:18:16,048 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8880> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:18:16,048 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8880> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:18:16,049 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85ae8880> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:18:16,050 INFO __init__ - Created channel=1
+2024-11-28 05:19:22,954 INFO abort - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44016), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:19:22,954 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44016), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:19:22,954 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44016), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:19:22,955 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:19:22,955 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:19:22,955 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44016), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:19:22,957 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:19:22,963 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 05:19:22,966 INFO _on_writable - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55432), raddr=('127.0.0.1', 5672)>
+2024-11-28 05:19:22,967 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85aee640>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85aee640> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 05:19:22,976 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85aee640> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:19:22,976 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85aee640> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:19:22,976 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f8f85aee640> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 05:19:22,977 INFO __init__ - Created channel=1
+2024-11-28 05:46:28,657 INFO calc - Result: 8
+2024-11-28 05:46:30,170 INFO calc - Result: 8
+2024-11-28 05:46:31,076 INFO calc - Result: 8
+2024-11-28 05:51:37,742 INFO calc - Result: 8
+2024-11-28 05:51:39,982 INFO calc - Result: 8
+2024-11-28 05:51:41,150 INFO calc - Result: 8
+2024-11-28 05:51:44,535 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:15,601 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:49,972 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:51,739 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:52,980 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:53,707 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:54,399 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:55,102 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:55,874 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:56,688 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:57,365 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:58,242 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:20,464 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:23,177 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:23,959 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:24,651 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:25,358 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:26,017 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:28,012 INFO calc - Result: 88
+2024-11-28 05:54:29,035 INFO calc - Result: 88
+2024-11-28 05:54:37,218 INFO calc - Result: 88
+2024-11-28 05:54:38,108 INFO calc - Result: 88
+2024-11-28 05:54:38,839 INFO calc - Result: 88
+2024-11-28 05:54:39,551 INFO calc - Result: 88
+2024-11-28 05:54:40,338 INFO calc - Result: 88
+2024-11-28 05:54:40,972 INFO calc - Result: 88
+2024-11-28 05:54:41,638 INFO calc - Result: 88
+2024-11-28 05:54:42,397 INFO calc - Result: 88
+2024-11-28 05:54:42,962 INFO calc - Result: 88
+2024-11-28 05:54:43,591 INFO calc - Result: 88
+2024-11-28 05:54:44,175 INFO calc - Result: 88
+2024-11-28 05:54:44,675 INFO calc - Result: 88
+2024-11-28 06:03:32,247 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:03:32,247 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 52818), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:03:32,249 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a603a60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a603a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:03:32,254 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a603a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:03:32,254 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a603a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:03:32,255 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a603a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:03:32,255 INFO __init__ - Created channel=1
+2024-11-28 06:04:15,781 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 52818), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:04:15,781 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 52818), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:04:15,781 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 52818), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:04:15,781 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:04:15,781 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:04:15,781 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 52818), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:04:15,782 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:04:15,783 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:04:15,784 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 38200), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:04:15,785 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a5a2730>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a5a2730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:04:15,791 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a5a2730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:04:15,792 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a5a2730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:04:15,792 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f599a5a2730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:04:15,792 INFO __init__ - Created channel=1
+2024-11-28 06:04:26,776 INFO calc - Result: 88
+2024-11-28 06:04:29,467 INFO calc - Result: 88
+2024-11-28 06:04:30,789 INFO calc - Result: 88
+2024-11-28 06:04:48,927 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:04:48,928 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44644), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:04:48,929 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186c30a60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186c30a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:04:48,933 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186c30a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:04:48,933 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186c30a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:04:48,933 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186c30a60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:04:48,933 INFO __init__ - Created channel=1
+2024-11-28 06:05:07,477 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44644), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:05:07,477 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44644), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:05:07,477 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44644), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:05:07,477 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:05:07,477 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:05:07,478 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 44644), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:05:07,478 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:05:07,481 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:05:07,483 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 40108), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:05:07,484 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186bcf730>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186bcf730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:05:07,491 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186bcf730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:05:07,492 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186bcf730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:05:07,492 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa186bcf730> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:05:07,493 INFO __init__ - Created channel=1
+2024-11-28 06:05:15,564 INFO calc - Result: 88
+2024-11-28 06:05:17,539 INFO calc - Result: 88
+2024-11-28 06:05:18,331 INFO calc - Result: 88
+2024-11-28 06:05:20,362 INFO calc - Result: 88
+2024-11-28 06:05:23,281 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:05:24,032 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:05:24,892 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:15,208 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:16,901 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:17,666 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:18,401 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:19,095 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:19,835 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:20,508 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:21,216 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:21,915 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:14:33,982 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:14:33,982 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47554), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:14:33,983 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f9a0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:14:33,987 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:14:33,987 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:14:33,987 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:14:33,987 INFO __init__ - Created channel=1
+2024-11-28 06:15:16,693 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47554), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:16,693 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47554), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:16,694 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47554), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:16,694 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:15:16,694 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:15:16,694 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47554), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:16,695 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:15:16,696 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:15:16,697 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47042), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:16,698 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddcfd670>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddcfd670> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:15:16,702 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddcfd670> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:15:16,702 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddcfd670> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:15:16,702 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddcfd670> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:15:16,703 INFO __init__ - Created channel=1
+2024-11-28 06:15:22,904 INFO calc - Result: 91
+2024-11-28 06:15:24,238 INFO calc - Result: 91
+2024-11-28 06:15:25,675 INFO calc - Result: 91
+2024-11-28 06:15:26,307 INFO calc - Result: 91
+2024-11-28 06:15:27,007 INFO calc - Result: 91
+2024-11-28 06:15:27,629 INFO calc - Result: 91
+2024-11-28 06:15:29,896 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:30,858 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:31,562 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:32,225 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:32,851 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:33,481 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:38,302 INFO abort - Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47042), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:38,302 INFO _initiate_abort - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47042), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:38,302 INFO _deactivate - Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47042), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:38,302 INFO _on_stream_terminated - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:15:38,302 INFO _on_stream_terminated - Stack terminated due to ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:15:38,302 INFO _close_and_finalize - Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 47042), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:38,304 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:15:38,308 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:15:38,309 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 50432), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:15:38,309 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f400>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f400> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:15:38,328 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f400> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:15:38,329 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f400> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:15:38,329 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f0cddd5f400> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:15:38,331 INFO __init__ - Created channel=1
+2024-11-28 06:16:00,614 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:16:01,736 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:16:14,026 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-11-28 06:16:14,027 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55770), raddr=('127.0.0.1', 5672)>
+2024-11-28 06:16:14,029 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f587531f9a0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f587531f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 06:16:14,037 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f587531f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:16:14,037 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f587531f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:16:14,038 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f587531f9a0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-11-28 06:16:14,038 INFO __init__ - Created channel=1
+2024-11-28 06:16:18,593 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:16:19,653 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:16:21,993 INFO calc - Result: 8
+2024-11-28 06:16:22,744 INFO calc - Result: 8

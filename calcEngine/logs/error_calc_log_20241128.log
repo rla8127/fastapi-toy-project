@@ -1,0 +1,84 @@
+2024-11-28 02:00:39,824 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 02:01:45,791 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 02:02:58,933 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:14:27,681 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:17:54,360 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 02:19:33,901 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 03:40:15,647 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:27,531 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:32,145 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:37,537 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:41,358 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:44,224 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:45,810 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:46,891 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:45:49,779 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:46:21,924 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 03:46:40,301 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:55:52,850 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 03:59:29,375 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:36:41,301 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:41,309 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:44,332 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:46,707 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:36:47,946 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:37:01,647 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:39:15,347 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:48:12,496 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:52:13,146 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:53:28,969 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 04:59:51,778 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 04:59:54,168 ERROR calc - Error: A는 처리할 수 없는 연산자입니다.
+2024-11-28 05:01:20,335 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:02:55,276 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:03:45,614 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:13,226 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:04:31,220 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:17:48,235 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:02,005 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:18:16,022 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:19:22,957 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 05:51:44,535 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:15,601 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:49,972 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:51,739 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:52,980 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:53,707 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:54,399 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:55,102 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:55,874 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:56,688 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:57,365 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:53:58,242 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:20,464 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:23,177 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:23,959 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:24,651 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:25,358 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 05:54:26,017 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:04:15,782 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:05:07,478 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:05:23,281 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:05:24,032 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:05:24,892 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:15,208 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:16,901 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:17,666 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:18,401 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:19,095 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:19,835 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:20,508 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:21,216 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:06:21,915 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:16,695 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:15:29,896 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:30,858 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:31,562 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:32,225 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:32,851 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:33,481 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:15:38,304 ERROR _flush_output - Unexpected connection close detected: ConnectionClosedByBroker: (320) 'CONNECTION_FORCED - Closed via management plugin'
+2024-11-28 06:16:00,614 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:16:01,736 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:16:18,593 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
+2024-11-28 06:16:19,653 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
