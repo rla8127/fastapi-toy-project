@@ -32,13 +32,13 @@ class RabbitMQSingleton:
             pika.ConnectionParameters(host=host, credentials=credentials, heartbeat=0)
             )
         
-        queues = ["calc_queue", "trans_queue", "crypt_queue"]
+        queues = ["calc_queue", "trans_queue", "encrypt_queue"]
         
         self.channel = self.connection.channel()
         
         for queue_name in queues:
             self.channel.queue_declare(
-                queue="calc_queue",
+                queue=queue_name,
                 arguments={
                     'x-message-ttl': 60000 # 메시지 TTL 설정 60초(60000MS)
                 },
@@ -77,36 +77,43 @@ rabbitmq_instance = RabbitMQSingleton(host=HOST_NAME, username=USERNAME, passwor
 ###################################################### 
 # RabbitMQ 메시지 퍼블리싱 
 ######################################################
-def send_message(request):
+def send_message(request, queue_name: str):
     global rabbitmq_instance
     while(True):
         try:
             request_id = str(uuid.uuid4())
             
-            if isinstance(request, CalcRequest):
-                message = json.dumps({
-                    "request_id": request_id,
-                    "expression": request.expression
-                }).encode()
+            message = json.dumps({
+                     "request_id": request_id,
+                     "text": request.text,
+                     "expression": request.expression,
+                     "direction": request.direction
+                 }).encode()
+            
+            # if isinstance(request, CalcRequest):
+            #     message = json.dumps({
+            #         "request_id": request_id,
+            #         "expression": request.expression
+            #     }).encode()
                 
-            elif isinstance(request, TransRequest):
-                message = json.dumps({
-                    "request_id": request_id,
-                    "text": request.text,
-                    "direction": request.direction
-                }).encode()
+            # elif isinstance(request, TransRequest):
+            #     message = json.dumps({
+            #         "request_id": request_id,
+            #         "text": request.text,
+            #         "direction": request.direction
+            #     }).encode()
                 
-            elif isinstance(request, CryptRequest):
-                message = json.dumps({
-                    "request_id": request_id,
-                    "text": request.text,
-                }).encode()
+            # elif isinstance(request, EncryptRequest):
+            #     message = json.dumps({
+            #         "request_id": request_id,
+            #         "text": request.text,
+            #     }).encode()
                 
             # 연결이 정상적인지 확인
             if rabbitmq_instance.connection.is_open:
                 # 채널도 정상적인지 확인, 모두 정상이면 퍼블리싱
                 if rabbitmq_instance.channel.is_open:
-                    rabbitmq_instance.queue_publish(message, request.queue_name)
+                    rabbitmq_instance.queue_publish(message, queue_name)
                 # 채널이 열려있지 않을 경우 채널만 재연결  
                 else:
                     rabbitmq_instance.open_channel()

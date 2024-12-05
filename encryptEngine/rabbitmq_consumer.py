@@ -1,4 +1,4 @@
-from transEngine import translate
+from encryptEngine import encrypt
 from threading import Lock
 from redis_set import set_result
 import json
@@ -20,7 +20,7 @@ def callback(ch, method, properties, body):
         request_id = data.get("request_id")
         text = data.get("text")
         direction = data.get("direction")
-        result = translate(text, direction)
+        result = encrypt(text)
         set_result(request_id, result)
         print({request_id})
         print(f"Result of {text}: {result}")
@@ -58,13 +58,13 @@ class RabbitMQSingleton:
     # 채널 비정상 종료 시 재연결을 위해 만든 함수
     def open_channel(self):
         self.channel = self.connection.channel()
-        self.channel.queue_declare(queue="trans_queue", durable=True)
+        self.channel.queue_declare(queue="encrypt_queue", durable=True)
 
 ##########################################
 # RabbitMQ 인스턴스 생성
 ##########################################    
 rabbitmq_instance = RabbitMQSingleton(host=HOST_NAME, username=USERNAME, password=PASSWORD)
-rabbitmq_instance.channel.basic_consume(queue="trans_queue", on_message_callback=callback, auto_ack=False)  
+rabbitmq_instance.channel.basic_consume(queue="encrypt_queue", on_message_callback=callback, auto_ack=False)  
 
 ##########################################
 # Main - Start Message Consuming
@@ -78,7 +78,7 @@ def consume_message():
             if rabbitmq_instance.connection.is_open:
                 # 채널도 정상적인지 확인
                 if rabbitmq_instance.channel.is_open:
-                    rabbitmq_instance.channel.basic_consume(queue="trans_queue", on_message_callback=callback, auto_ack=False)  
+                    rabbitmq_instance.channel.basic_consume(queue="encrypt_queue", on_message_callback=callback, auto_ack=False)  
                     rabbitmq_instance.channel.start_consuming()     
                 # 채널이 열려있지 않을 경우 채널만 재연결  
                 else:       

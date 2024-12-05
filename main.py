@@ -1,16 +1,45 @@
 from fastapi import FastAPI, Query, HTTPException, status, Depends
-from jose import jwt, JWTError
-from typing import Union
+from task import execute_task
 from redis_get import *
 from models import *
+from jwt import *
 import json
-from datetime import datetime, timedelta
 
 app = FastAPI() 
 
-#########################
+########################################################
+# API Gateway 진입점 API (태스크 관리 및 JWT 검증)
+########################################################
+@app.post("/")
+async def api_gateway(request: ApiRequest, current_user: str = Depends(get_current_user)):
+    try:
+        results = await execute_task(request.task_id, request)
+        return {"task_id": request.task_id, "results": results}
+
+    except Exception as e:
+        print(f"Error: {e}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+    
+######################################################################
+# 로그인 엔드포인트
+######################################################################
+@app.post("/token")
+def login(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = fake_users_db.get(form_data.username)
+    if not user or user["password"] != form_data.password:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid username or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    access_token = create_access_token(data={"sub": user["username"]})
+    return {"access_token": access_token, "token_type": "bearer"}
+
+
+#########################################################
+# 직접 엔진 호출하는 API
 # GET - 계산식 결과 호출
-#########################
+#########################################################
 @app.get("/calc/")
 async def calc(
     expression: str = Query(
@@ -45,7 +74,7 @@ async def calc(
 #########################
 @app.post("/calc/")
 async def calc(request: CalcRequest):
-    request_id = send_message(request)
+    request_id = send_message(request, "calc_queue")
     result = await wait_for_result(request_id)
     return {"request_id": request_id, "expression": request.expression, "result": result}
 
@@ -54,25 +83,15 @@ async def calc(request: CalcRequest):
 #########################
 @app.post("/trans")
 async def translate(request: TransRequest):
-    request_id = send_message(request)
+    request_id = send_message(request, "trans_queue")
     result = await wait_for_result(request_id)
     return {"request_id": request_id, "text": request.text, "번역 결과": result}
     
 #########################
 # POST - 번역 엔진 호출
 #########################
-@app.post("/crypt")
-async def translate(request: CryptRequest):
-    request_id = send_message(request)
+@app.post("/encrypt")
+async def translate(request: EncryptRequest):
+    request_id = send_message(request, "encrypt_queue")
     result = await wait_for_result(request_id)
     return {"request_id": request_id, "text": request.text, "암호화 결과": result}
-
-#@app.post("/")
-#async def api_gateway(request : d):
-#    1.JWT 토큰인증
-#    2. 테스크 판별 -> 그걸 순서대로 실행
-    
-#    3. "abc" -> md5 -> "asdkaopsdkasp" 
-    
-#    "asdasjicxoijojdoasjdoijasodjaosdjo"
-

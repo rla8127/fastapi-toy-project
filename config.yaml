@@ -1,7 +1,32 @@
-task:
-  번역맞춤법계산: ["번역","맞","계산"]
-  번역계산: ["번역","계산"]
-  계산: ["계산"]
-  
-  
-  
+tasks:
+  1: 
+    - name: calc
+      queue: calc_queue
+
+  2: 
+    - name: trans
+      queue: trans_queue
+
+  3:
+    - name: encrypt
+      queue: encrypt_queue
+
+  4:
+    - name: trans
+      queue: trans_queue
+    - name: encrypt
+      queue: encrypt_queue
+
+  5:
+    - name: calc
+      queue: calc_queue
+    - name: encrypt
+      queue: encrypt_queue
+
+  6:
+    - name: calc
+      queue: calc_queue
+    - name: trans
+      queue: trans_queue
+    - name: encrypt
+      queue: encrypt_queue  
