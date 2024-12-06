@@ -16,6 +16,9 @@ class ApiRequest(BaseModel):
         5번: 계산 -> 암호화<br>
         6번: 계산 -> 번역 -> 엔진<br>"""
     )
+    jwt_token: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." \
+                     "eyJpc3MiOiJyYWJiaXRtcS50ZXN0LmNvbSIsInN1YiI6ImNodW5qYWUtc2VydmljZTAwNSIsInJvbGUiOiJhZG1pbiJ9." \
+                     "aUhdhftyJY5FJr7I1ZdpZ4CWZuPLWB1rFfRm9mzMLj0"
     direction: Optional[int] = None
     text: Optional[str] = None
     expression: Optional[str] = None

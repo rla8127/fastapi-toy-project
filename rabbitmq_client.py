@@ -1,8 +1,5 @@
 from threading import Lock
-from models import *
 import pika
-import uuid
-import json
 
 ###########################################
 #          Variable Definition            #
@@ -71,43 +68,4 @@ class RabbitMQSingleton:
         
         
         
-##########################################
-# RabbitMQ 인스턴스 생성
-##########################################    
-rabbitmq_instance = RabbitMQSingleton(host=HOST_NAME, username=USERNAME, password=PASSWORD)
-
-###################################################### 
-# RabbitMQ 메시지 퍼블리싱 
-######################################################
-def send_message(request, queue_name: str):
-    global rabbitmq_instance
-    while(True):
-        try:
-            request_id = str(uuid.uuid4())
-            
-            message = json.dumps({
-                     "request_id": request_id,
-                     "text": request.text,
-                     "expression": request.expression,
-                     "direction": request.direction
-                 }).encode()
-                
-            # 연결이 정상적인지 확인
-            if rabbitmq_instance.connection.is_open:
-                # 채널도 정상적인지 확인, 모두 정상이면 퍼블리싱
-                if rabbitmq_instance.channel.is_open:
-                    rabbitmq_instance.queue_publish(message, queue_name)
-                # 채널이 열려있지 않을 경우 채널만 재연결  
-                else:
-                    rabbitmq_instance.open_channel()
-            # 연결 비정상일 시, 인스턴스 재생성 및 커넥션 / 채널 생성
-            else:
-                rabbitmq_instance = RabbitMQSingleton(host=HOST_NAME, username=USERNAME, password=PASSWORD)
-                rabbitmq_instance._connect(host=HOST_NAME, username=USERNAME, password=PASSWORD) 
-                print(f"rabbitmq connection is reconnected !!!")   
-                
-            return request_id
-        
-        except Exception as e:
-            print(f"Error: {e}")
 
