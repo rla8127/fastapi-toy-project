@@ -1,9 +1,0 @@
-2024-12-01 23:49:39,095 INFO start - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
-2024-12-01 23:49:39,097 INFO _on_writable - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 42688), raddr=('127.0.0.1', 5672)>
-2024-12-01 23:49:39,098 INFO _on_transport_establishment_done - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f758be35d60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f758be35d60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
-2024-12-01 23:49:39,104 INFO _report_completion_and_cleanup - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f758be35d60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-2024-12-01 23:49:39,105 INFO _report_completion_and_cleanup - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f758be35d60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-2024-12-01 23:49:39,105 INFO _create_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f758be35d60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-2024-12-01 23:49:39,106 INFO __init__ - Created channel=1
-2024-12-02 00:06:24,109 INFO calc - Result: 8
-2024-12-02 00:06:34,245 ERROR calc - Error: a는 처리할 수 없는 연산자입니다.
