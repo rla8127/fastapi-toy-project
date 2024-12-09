@@ -22,4 +22,3 @@ class RedisSingleton:
                     cls._instance.redis = redis.Redis(host=host, port=port, db=db)
         return cls._instance
     
-    

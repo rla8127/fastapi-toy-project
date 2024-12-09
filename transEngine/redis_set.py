@@ -23,12 +23,17 @@ redis_instance = RedisSingleton(host='localhost', port=6379, db=0)
 # Redis에 결과값 저장
 ##########################################
 def set_result(request_id, result):
-    try:
-        redis_instance.redis.set(request_id, result, ex=60)
-        value = redis_instance.redis.get(request_id)
-        print("redis 값 저장 완료")
-        print(f"{request_id} = {value}")
-    
-    except Exception as e:
-        print(f"Error: {e}")
+    global redis_instance
+    while(True):   
+        try:
+            if not redis_instance.redis.ping():
+                print("Redis 재연결 시도 중 ...")
+                redis_instance = RedisSingleton(host='localhost', port=6379, db=0)
+            
+            redis_instance.redis.set(request_id, result, ex=60)
+            value = redis_instance.redis.get(request_id)
+            print(f"redis 값 저장 완료 {request_id} = {value}")
+            break
         
+        except Exception as e:
+            print(f"Error: {e}") 
