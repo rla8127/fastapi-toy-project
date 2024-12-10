@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+redis
+pika
+pyyaml
+pydantic
+python-jose[cryptography]
