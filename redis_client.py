@@ -2,12 +2,6 @@ from threading import Lock
 import redis
 
 ###########################################
-#          Variable Definition            #
-###########################################
-REDIS_HOST = "172.16.10.237"
-REDIS_PORT = 6379
-
-###########################################
 #                 Function                #
 ###########################################
 class RedisSingleton:

@@ -6,6 +6,17 @@ import yaml
 import uuid
 import json
 import asyncio
+import os
+
+###########################################
+#                변수 선언                 #
+###########################################
+RABBIT_HOST = os.getenv("RABBIT_HOST")
+RABBIT_PORT = os.getenv("RABBIT_PORT")
+RABBIT_USERNAME = os.getenv("RABBIT_USERNAME")
+RABBIT_PASSWORD = os.getenv("RABBIT_PASSWORD")
+REDIS_HOST = os.getenv("REDIS_HOST")
+REDIS_PORT = os.getenv("REDIS_PORT")
 
 ##########################################
 # YAML 파일 -> 딕셔너리 변환 함수
@@ -44,7 +55,7 @@ async def execute_task(request: ApiRequest):
 ###################################################### 
 # RabbitMQ 메시지 퍼블리싱 
 ######################################################
-rabbitmq_instance = RabbitMQSingleton(host=HOST_NAME, username=USERNAME, password=PASSWORD)
+rabbitmq_instance = RabbitMQSingleton(host=RABBIT_HOST, username=RABBIT_USERNAME, password=RABBIT_PASSWORD)
 
 def send_message(request, queue_name: str):
     global rabbitmq_instance
@@ -69,8 +80,8 @@ def send_message(request, queue_name: str):
                     rabbitmq_instance.open_channel()
             # 연결 비정상일 시, 인스턴스 재생성 및 커넥션 / 채널 생성
             else:
-                rabbitmq_instance = RabbitMQSingleton(host=HOST_NAME, username=USERNAME, password=PASSWORD)
-                rabbitmq_instance._connect(host=HOST_NAME, username=USERNAME, password=PASSWORD) 
+                rabbitmq_instance = RabbitMQSingleton(host=RABBIT_HOST, username=RABBIT_USERNAME, password=RABBIT_PASSWORD)
+                rabbitmq_instance._connect(host=RABBIT_HOST, username=RABBIT_USERNAME, password=RABBIT_PASSWORD)
                 print(f"rabbitmq connection is reconnected !!!")   
                 
             return request_id
@@ -82,7 +93,7 @@ def send_message(request, queue_name: str):
 ###################################################### 
 # Redis GET
 ######################################################
-redis_instance = RedisSingleton(REDIS_HOST, REDIS_PORT, db=0)
+redis_instance = RedisSingleton(host=REDIS_HOST, port=REDIS_PORT, db=0)
 
 async def wait_for_result(request_id: str):
     global redis_instance
@@ -102,7 +113,7 @@ async def wait_for_result(request_id: str):
         except redis.ConnectionError as e:
             print(f"Redis 연결 실패: {e}. 재시도 중...")
             # 연결에 실패하면 재시도 진행
-            redis_instance = RedisSingleton(REDIS_HOST, REDIS_PORT, db=0)
+            redis_instance = RedisSingleton(host=REDIS_HOST, port=REDIS_PORT, db=0)
             
         await asyncio.sleep(interval)  # interval 동안 대기
         elapsed_time += interval  # 경과 시간 증가
